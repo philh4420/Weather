@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weather App</h1>
+    <div class="search">
+      <input type="text" id="locationInput" placeholder="Enter location...">
+      <button id="searchButton">Search</button>
+    </div>
+  </header>
+  <main>
+    <div class="mosaic-grid">
+      <div class="mosaic-item current-weather">
+        <section class="weather-info">
+          <h2>Current Weather</h2>
+          <p><strong>Location:</strong> <span id="location"></span></p>
+          <p><strong>Temperature:</strong> <span id="temperature"></span> °C</p>
+          <p><strong>Condition:</strong> <span id="condition"></span></p>
+          <div id="icon" class="weather-icon"></div>
+          <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> km/h</p>
+          <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+          <p><strong>Pressure:</strong> <span id="pressure"></span> mb</p>
+          <p><strong>Visibility:</strong> <span id="visibility"></span> km</p>
+          <p><strong>Cloud Cover:</strong> <span id="cloudCover"></span>%</p>
+          <p><strong>Precipitation:</strong> <span id="precipitation"></span> mm</p>
+          <p><strong>UV Index:</strong> <span id="uvIndex"></span></p>
+        </section>
+      </div>
+      <div class="mosaic-item hourly-forecast">
+        <section class="forecast-info">
+          <h2>Hourly Forecast</h2>
+          <div id="hourly-forecast"></div>
+        </section>
+      </div>
+      <div class="mosaic-item forecast">
+        <section class="forecast-info">
+          <h2>3-Day Forecast</h2>
+          <div id="forecast"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js"
+    integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
